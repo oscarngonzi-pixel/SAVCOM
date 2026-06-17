@@ -1,0 +1,23 @@
+{
+  "name": "savcom-overall-processor",
+  "version": "1.0.0",
+  "description": "SAVCOM OVERALL Processor — moja kwa moja kutoka CRDB (PASSED_SAV) na NMB (PASSED_SAV_NMB) Google Sheets",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "render-build": "npm install && npm run install:frontend && npm run build:frontend",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "googleapis": "^140.0.1",
+    "exceljs": "^4.4.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
